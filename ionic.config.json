@@ -1,5 +1,7 @@
 {
   "name": "yoobic-hiring-project",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
