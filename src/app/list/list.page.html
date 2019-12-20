@@ -1,17 +1,22 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      List
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            List
+        </ion-title>
+        <ion-icon name="options" slot="end" size="large"></ion-icon>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
-  <!--
+    <ion-card *ngFor="let char of people">
+        <a [routerLink]="['/character-details',char.url.split('/')[char.url.split('/').length -2]]">
+            <ion-card-content>{{char.name}}</ion-card-content>
+        </a>
+    </ion-card>
+    <!--
     <div *ngIf="selectedItem" padding>
       You navigated here from <b>{{selectedItem.title }}</b>
     </div>

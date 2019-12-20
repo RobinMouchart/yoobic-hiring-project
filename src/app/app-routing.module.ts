@@ -17,8 +17,13 @@ const routes: Routes = [
   },
   {
     path: 'sign-in',
-    loadChildren: () => import('./sign-in/sign-in.module').then( m => m.SignInPageModule)
+    loadChildren: () => import('./sign-in/sign-in.module').then(m => m.SignInPageModule)
+  },
+  {
+    path: 'character-details/:id',
+    loadChildren: () => import('./character-details/character-details.module').then(m => m.CharacterDetailsPageModule)
   }
+
 ];
 
 @NgModule({
@@ -27,4 +32,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
