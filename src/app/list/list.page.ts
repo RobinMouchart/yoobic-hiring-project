@@ -14,7 +14,7 @@ export class ListPage implements OnInit {
 
   ngOnInit() {
     this.peopleService.getPeople().subscribe(data => {
-      console.log(data);
+      // console.log(data);
       data.results.forEach(char => this.people.push(char));
     });
   }

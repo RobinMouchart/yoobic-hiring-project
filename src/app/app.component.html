@@ -13,16 +13,16 @@
 
             <div class="div-row-flex-colummn flex-1">
               <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
-                <div justify-content-start class="div-row-flex margin-start" [routerDirection]="'root'" [routerLink]="[p.url]">
+                <div class="div-row-flex margin-start ion-justify-content-start" [routerDirection]="'root'" [routerLink]="[p.url]">
                   <ion-icon slot="start" [name]="p.icon" size="large" color="medium"></ion-icon>
-                  <p margin-start>{{p.title}}</p>
+                  <p class="ion-margin-start">{{p.title}}</p>
                 </div>
               </ion-menu-toggle>
             </div>
 
 
             <div class="div-row-flex" [routerLink]="['/sign-in']">
-              <ion-icon name="power" size="large" color="medium" margin-bottom></ion-icon>
+              <ion-icon name="power" size="large" color="medium" class="ion-margin-bottom"></ion-icon>
             </div>
           </div>
 
