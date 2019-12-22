@@ -1,17 +1,56 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>signIn</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content >
+  <div class="flex">
 
-<ion-content>
-<ion-grid class="full-height">
-  <ion-row class="full-height">
-    <ion-col sizeLg="6"  offsetLg="3" sizeMd="6" offsetMd="3" align-self-center>
-      <ion-input type="email" placeholder="Email"></ion-input>
-      <ion-input type="password" placeholder="Password"></ion-input>
-      <ion-button expand="block" color="primary" href="/list">Sign in</ion-button>
-    </ion-col>
-  </ion-row>
-</ion-grid>
+    <div class="div-row-flex flex-1">
+      <ion-avatar class="large-logo">
+        <img src='assets/logo-star-wars.png'>
+      </ion-avatar>
+    </div>
+    
+    <div class="div-row-flex flex-1">
+      <ion-text color="primary">
+        <h1 text-center>Sign In</h1>
+      </ion-text>
+    </div>
+    
+    <div class="div-row-flex">
+      <ion-list no-margin>
+        <ion-item>
+          <ion-icon name="mail" color="secondary"></ion-icon>
+          <ion-input type="email" placeholder="Email" margin-start></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-icon name="lock" color="secondary"></ion-icon>
+          <ion-input type="password" placeholder="Password" margin-start></ion-input>
+        </ion-item>
+      </ion-list>
+    </div>
+
+  <div class="div-row-flex" id="test">
+      <ion-text float-end color="medium">
+        <p no-margin> Forgot password?</p>
+      </ion-text>
+    </div>
+
+    <div class="div-row-flex flex-1">
+      <ion-text text-center>
+        <p>Sign in with</p>
+        <ion-icon name="logo-facebook" size="large" color="primary"></ion-icon>
+      </ion-text>
+    </div>
+
+    <div class="div-row-flex flex-1">
+      <ion-button fill="outline" expand="block" color="primary" shape="round" href="/list">Sign Up</ion-button>
+      <ion-button expand="block" color="primary" shape="round" href="/list">Sign in</ion-button>
+    </div>
+
+    <div class="div-row-flex flex-0">
+      <ion-text color="medium">
+        <p class="underlined">Terms and conditions</p>
+      </ion-text>
+    </div>
+    
+  </div>
+
 </ion-content>
