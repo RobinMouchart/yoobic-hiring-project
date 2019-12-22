@@ -24,10 +24,8 @@
   flex:2;
 }
 
-#test {
-  width:83%;
-  justify-content: flex-end;
-  // align-items: flex-end;
+#input-form {
+  flex-direction: column;
 }
 
 .div-row-flex{

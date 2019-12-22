@@ -13,7 +13,7 @@ export class AppComponent {
   public appPages = [
     {
       title: 'Home',
-      url: '/home',
+      url: '/list',
       icon: 'home'
     },
     {
@@ -22,9 +22,14 @@ export class AppComponent {
       icon: 'list'
     },
     {
-      title: 'Sign Out',
-      url: '/sign-in',
-      icon: 'log-out'
+      title: 'Available Missions',
+      url: '/list',
+      icon: 'image'
+    },
+    {
+      title: 'My Missions',
+      url: '/list',
+      icon: 'image'
     }
   ];
 
