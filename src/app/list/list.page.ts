@@ -8,7 +8,7 @@ import { PeopleService } from '../people.service';
 })
 export class ListPage implements OnInit {
   private selectedItem: any;
-  private people = [];
+  public people = [];
 
   constructor(private peopleService: PeopleService) { }
 

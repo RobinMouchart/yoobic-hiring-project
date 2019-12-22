@@ -1,0 +1,42 @@
+.small-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.flex {
+    min-height: 100%;
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--ion-color-secondary);
+}
+
+.flex-0 {
+flex:0;
+}
+
+.flex-1 {
+  flex:1;
+}
+
+.flex-2 {
+  flex:2;
+}
+
+.column {
+    flex-direction: column;
+    background-color: var(--ion-color-secondary);
+  }
+
+.small-margin {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.div-row-flex{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

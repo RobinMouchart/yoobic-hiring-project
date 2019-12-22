@@ -16,4 +16,3 @@ export class People {
     edited: string;
     url: string;
   }
-  

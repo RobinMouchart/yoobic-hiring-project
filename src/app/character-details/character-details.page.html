@@ -1,12 +1,44 @@
 <ion-header>
     <ion-toolbar>
-        <ion-buttons slot="start">
+        <a routerLink="/list">
+            <ion-icon slot="start" name="arrow-back" size="large" ></ion-icon>
+        </a>
+        <ion-buttons slot="end">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-title *ngIf="character">{{character.name}}</ion-title>
+        <ion-title>
+            <img src="assets/logo-star-wars.png" class="small-logo">
+        </ion-title>
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content *ngIf="character">
+    <div class="flex">
+
+        <div class="div-row-flex">
+            <h1 color="primary">{{character.name}}</h1>
+        </div>
+    
+        <div class="div-row-flex flex-0 ion-margin-top ion-margin-bottom">
+            <img src="assets/star-wars-image.jpg" alt="">    
+        </div>
+    
+        <div class="div-row-flex">
+            <p class="ion-margin">{{character.name}} appears in {{character.films.length}} film(s) and weights {{character.mass}} kilograms</p>
+        </div>
+       
+        <div class="div-row-flex column">
+            <h4 class="ion-margin">List of the films {{character.name}} appears in:</h4>
+            <ng-container *ngIf="films">
+                <div *ngFor="let film of films">
+                    <p class="small-margin">{{film.title}}</p>
+                </div>
+            </ng-container>
+        </div>
+
+    </div>
+
+
+
 
 </ion-content>
