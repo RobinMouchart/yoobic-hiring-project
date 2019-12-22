@@ -4,16 +4,22 @@
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
         <ion-title>
-            List
+            <img src="assets/logo-star-wars.png" class="small-logo">
         </ion-title>
         <ion-icon name="options" slot="end" size="large"></ion-icon>
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
-    <ion-card *ngFor="let char of people">
+<ion-content color="secondary">
+    <ion-card *ngFor="let char of people" class="white-background">
         <a [routerLink]="['/character-details',char.url.split('/')[char.url.split('/').length -2]]">
-            <ion-card-content>{{char.name}}</ion-card-content>
+            <ion-card-header>
+                <ion-card-title color="primary">{{char.name}}</ion-card-title>
+            </ion-card-header>
+            <img src="assets/star-wars-image.jpg">
+            <ion-card-content>
+                <p class="no-underline">{{char.name}} appears in {{char.films.length}} film(s) and weights {{char.mass}} kilograms</p>
+            </ion-card-content>
         </a>
     </ion-card>
     <!--
